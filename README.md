@@ -24,9 +24,9 @@ Write-Host ''
 
 #### ***tfswitcher-download.ps1***
 This function downloads Terraform version to populate your tfswitch folder. Once the version are located and formated in the tfswitch folder they can be used.
-#### ***tfswitcher-localver.ps1*** 
+#### ***tfswitcher-localver.ps1***
 This function list existing avialble Terraform versions that can be used by the ``` tfswitcher-switchver``` function.
-### ***tfswitcher-switchver.ps1***
+#### ***tfswitcher-switchver.ps1***
 This function changes the existing Terraform into any avialble version.
 #### ***tfswitcher-undo.ps1***
 This function reverts to the last Terraform version used. This function can be executed after a ``` tfswitcher-switchver``` to revert to the previous Terraform version in use.
