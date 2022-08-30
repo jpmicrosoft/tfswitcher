@@ -9,7 +9,7 @@ Handles switching Terraform versions in Windows.
     + $tfswitcherPath - Example: ``` $tfswitcherPath = "C:\Users\user1\Documents\Code\tools\tfswitcher\" ```
 - Add the following code to your PowerShell profile<sup>1</sup>. Ensure you change the directory to point to where the functions are going to run execute from.
 
-<sup>1</sup> Sometimes the $Profile mentiones that a profile file exist but this may not be true and you may need to create one.
+<sup>1</sup> Sometimes the [$Profile](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.2#the-profile-files) mentiones that a profile file exist but this may not be true and you may need to create one.
 
 ```
 # Load tfswitcher custom functions
