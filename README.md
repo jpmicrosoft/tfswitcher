@@ -7,7 +7,8 @@ Handles switching Terraform versions in Windows.
 - Update the folling variables in the .ps1 files with the corresponing folder paths unique to your workstation.
     + $terraformPath - Example: ``` $terraformPath = "C:\Users\user1\Documents\terraform\" ```
     + $tfswitcherPath - Example: ``` $tfswitcherPath = "C:\Users\user1\Documents\Code\tools\tfswitcher\" ```
-- Add the following code to your PowerShell Core profile. Ensure you change the directory to point to where the functions are going to run execute from.
+- Add the following code to your PowerShell profile. Ensure you change the directory to point to where the functions are going to run execute from.
+
 ```
 # Load tfswitcher custom functions
 $tfswitcher = "$env:USERPROFILE\Documents\tools\tfswitcher" #### Change Me
