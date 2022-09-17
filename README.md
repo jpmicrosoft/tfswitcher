@@ -3,7 +3,7 @@ Handles switching Terraform versions in Windows.
 
 ### Requirements
 - Terraform already existing and usable.
-- Create a folder named ``previous`` inside the folder where the existing Terraform exe is located.
+- Create a folder named ``previous`` inside the folder where the existing Terraform executable is located.
 - Update the folling variables in the .ps1 files with the corresponing folder paths unique to your workstation.
     + $terraformPath - Example: ``` $terraformPath = "C:\Users\user1\Documents\terraform\" ```
     + $tfswitcherPath - Example: ``` $tfswitcherPath = "C:\Users\user1\Documents\Code\tools\tfswitcher\" ```
