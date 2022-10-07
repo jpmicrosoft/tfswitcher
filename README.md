@@ -37,3 +37,20 @@ This function reverts to the last Terraform version used. This function can be e
 
 #### ***tfswitcher-help.ps1***
 This function simply list the available functions, it helps when you are new to using tfswitcher.
+
+### Common Errors
+
+#### Security warning
+Run only scripts that you trust. While scripts from the internet can be useful, this script can potentially 
+harm your computer. If you trust this script, use the Unblock-File cmdlet to allow the script to run without
+this warning message. Do you want to run
+C:\Users\user1\Documents\tools\tfswitcher\tfswitcher-download.ps1?
+[D] Do not run  [R] Run once  [S] Suspend  [?] Help (default is "D"):
+
+This warning will occur for every .ps1 that the profile is trying to load. The solution is to navigate to the path where the .ps1 scripts exist and unblock them. This is how I like to do it. 
+``` 
+C:\Users\user1\Documents\tools\tfswitcher\ls | unblock-file
+```
+
+This will unblock all of them at once. Ensure all PowerShell sessions have been closed. The next time you open a PowerShell session the profile will load them without any warnings. 
+
