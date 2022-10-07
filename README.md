@@ -19,6 +19,7 @@ Write-Host "tfswitcher-download" -ForegroundColor Yellow
 Write-Host "tfswitcher-localver" -ForegroundColor Yellow
 Write-Host "tfswitcher-switchver" -ForegroundColor Yellow
 Write-Host "tfswitcher-undo" -ForegroundColor Yellow
+Write-Host "tfswitcher-help" -ForegroundColor Yellow
 Get-ChildItem "$tfswitcher\*.ps1" | % { .$_ }
 Write-Host ''
 ```
@@ -33,3 +34,6 @@ This function changes the existing Terraform into any avialble version.
 #### ***tfswitcher-undo.ps1***
 This function reverts to the last Terraform version used. This function can be executed after a ``` tfswitcher-switchver``` to revert to the previous Terraform version in use.
 :exclamation: This function reverts only if at least one sucessfull ```tfswitcher-switchver``` has occured. Until then the previous folder will be empty and thus there will not be a version to revert too.
+
+#### ***tfswitcher-help.ps1***
+This function simply list the available functions, it helps when you are new to using tfswitcher.
